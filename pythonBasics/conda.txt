@@ -1,0 +1,13 @@
+#run juypyter
+open pythonjupyter folder-
+conda activate
+jupyter lab
+conda env list
+
+# create --
+conda create -n primeenv
+
+# delete --
+conda deactivate
+conda env remove -n primeenv
+conda remove -n primeenv ..all

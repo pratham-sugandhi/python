@@ -1,0 +1,42 @@
+
+// DATA -
+
+STEP 1 :- json data ko get krenge in our system --
+
+import json
+def load_data(filename):
+    with open(filename, "r") as f:
+        data = json.load(f)
+    return data
+
+data = load_data("store_data.json")
+print(data)
+
+STEP 2 :- Cleaning and structuring of data :
+
+# clean and structure data :
+def clean_data(data):
+    text_to_num = {"one" : 1, "two" : 2, "three" : 3, "four" : 4, "five" : 5} 
+    
+    for user in data:   # clean rating
+        raw_rating = user["rating"].strip().lower()
+        print(raw_rating)
+        if raw_rating in text_to_num :
+            raw_rating = text_to_num[raw_rating]
+        user["rating"] = raw_rating
+
+        print(raw_rating)
+
+clean_data(data)
+
+
+// NUMPYY -- 
+import numpy as np
+
+np_arr = np.array(py_list)
+
+why numpy array? =>
+faster - c supported
+homogeneous - data type
+contigenous memory 
+multiple dim

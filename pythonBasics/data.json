@@ -1,0 +1,10 @@
+
+
+{
+    "name" : "Pratham" ,
+    "isTeacher" : false,
+    "address" : {
+        "city" : "indore",
+        "country" : "ind"
+    }
+}
