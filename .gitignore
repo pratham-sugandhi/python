@@ -1,0 +1,69 @@
+# -----------------------------
+# Python Cache Files
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# -----------------------------
+# Virtual Environments
+# -----------------------------
+venv/
+env/
+ENV/
+.venv/
+
+# -----------------------------
+# Jupyter Notebook Checkpoints
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Environment Variables
+# -----------------------------
+.env
+*.env
+
+# -----------------------------
+# Distribution / Packaging
+# -----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -----------------------------
+# Logs and Temporary Files
+# -----------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+
+# -----------------------------
+# Data Science Files
+# -----------------------------
+*.sqlite3
+*.db
+
+# -----------------------------
+# IDE and Editor Settings
+# -----------------------------
+.vscode/
+.idea/
+
+# -----------------------------
+# Operating System Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Large Data Files (Optional)
+# -----------------------------
+*.csv
+*.xlsx
+*.zip
