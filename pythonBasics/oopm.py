@@ -360,3 +360,130 @@
 # std2.set_mark(89)
 # print(std1.get_roll())
 # print(std2.get_name())
+
+# # 4
+# class Shape :
+#     def __init__ (self, a):
+#         self.a = a
+
+#     def area(self):
+#         print("Area", self.a)
+
+# class Circle(Shape) :
+#     def area(self):
+#         print("Circle Area", self.a)
+
+# obj = Shape(20)
+# obj.area()
+
+# obb = Circle(50)
+# obb.area()
+
+# # 5 
+# class Vehicle :
+#     def __init__(self, brand , model):
+#         self.brand = brand
+#         self.model = model
+
+# class Car(Vehicle):
+#     def __init__(self,brand, model, seats):
+#         super().__init__(brand, model)
+#         self.seats = seats
+
+#     def get_data(self):
+#         print(self.brand, self.seats)
+
+# class Bike(Vehicle):
+#     def __init__(self,brand, model, engine):
+#         super().__init__(brand, model)
+#         self.engine = engine
+        
+#     def get_data(self):
+#         print(self.model, self.engine)
+
+# v1 = Vehicle("RR", 91)
+
+# c1 = Car("rr", 345, 4)
+# c1.get_data()
+
+# c2 = Bike("hh", 344, 11)
+# c2.get_data()
+
+# # 7
+# class Person :
+
+#     def __init__(self, name="kjh", age=34, address="ghb"):
+#         self.name = name
+#         self.age = age
+#         self.address = address
+
+# p1 = Person("hiii")
+# p2 = Person("byee", 88)
+# p3 = Person("bg", 98, "aerf")
+
+# # # 9
+# class Herbivore :
+#     def __init__(self, animal1):
+#         self.animal1 = animal1
+
+# class Carnivore :
+#     def __init__(self, animal2) :
+#         self.animal2 = animal2
+
+# class Omnivore :
+#     def __init__(self, animal3):
+#         self.animal3 = animal3
+
+# class Bear(Herbivore, Carnivore, Omnivore):
+#     def __init__(self, animal1, animal2, animal3):
+#         Herbivore.__init__(self, animal1)
+#         Carnivore.__init__(self, animal2)
+#         Omnivore.__init__(self, animal3)
+
+#     def bear_eats(self):
+#         print("Bear eats:", self.animal1, self.animal2, self.animal3)
+
+# ob = Bear("grass", "meat", "grass_meat")
+# ob.bear_eats()
+
+# Wehavetocreateclasses:•User•Message•ChatRoom
+# Andwehavetoimplementfunctions:
+# •sendingmessages•viewingchathistory•userjoiningandleavingthechatroom
+
+
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.chat_room = None
+    
+    def create_room(self, chat_room):
+        if self.chat_room == None:
+            self.chat_room = chat_room
+
+    def join_chat(self):
+
+        
+class ChatRoom:
+    def __init__ (self, chat_room, name):
+        self.chat_room = chat_room
+        super().__init__(name)
+
+
+# Create users
+alice = User("Alice")
+bob = User("Bob")
+
+# Create and join a chat room
+room = ChatRoom("General")
+alice.join_chat(room)
+bob.join_chat(room)
+
+# Send messages
+alice.send_message("Hello, Bob!")
+bob.send_message("Hi, Alice!")
+
+# View chat history
+alice.view_history()
+
+# Leave chat room
+bob.leave_chat()
