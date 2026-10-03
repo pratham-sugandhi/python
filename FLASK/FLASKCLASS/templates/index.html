@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+
+    <!--  this will not work because the path is wrong. It should be static/style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+    
+    <!-- <script src="{{ url_for('static', filename='app2.js') }}"></script> -->
+
+</head>
+
+<body>
+    <p>Query parameter: {{ query }} & Subject: {{ sub }}</p>
+    <h1>Hello, World by Pratham!</h1>
+    <p>This is a simple Flask app!</p>
+    <footer> <i>Rendered from index.html</i></footer>
+
+    <h1>Welcome to the Flask Application</h1>
+    
+</body>
+</html> """
