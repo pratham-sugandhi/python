@@ -1,0 +1,52 @@
+ML-
+
+
+inp / out	->
+ 			logic (hypothesis)
+
+						-> new inp  
+								-> predicted out
+
+
+
+TYPES OF ML -
+
+#A) Supervised learning-
+
+    labeled data --> inp/out available
+
+
+1 classification		|	    2 regression
+                        |
+classify/ categories	|		range 
+                        |
+dogs/cats				|		marks
+spams					|		aqi / stocks
+
+
+----X---
+
+
+#B) unsupervised learning- 
+
+    unlabeled data --> only inp
+
+
+1 clustering - 
+iPhone + charger
+
+
+----X---
+
+
+#C) Reinforcement learning- 
+
+    goal oriented -->
+    	supervised + unsupervised 
+
+
+rewards/ penalties
+
+
+----X---
+

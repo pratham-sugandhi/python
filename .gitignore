@@ -50,6 +50,25 @@ dist/
 *.db
 
 # -----------------------------
+# Large ML / model / dataset artifacts
+# -----------------------------
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.bin
+*.onnx
+*.model
+*.exe
+*.tar.gz
+*.tgz
+*.zip
+vector_store/
+models/
+data/
+
+# -----------------------------
 # IDE and Editor Settings
 # -----------------------------
 .vscode/
